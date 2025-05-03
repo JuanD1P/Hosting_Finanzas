@@ -1,12 +1,13 @@
-import mysql from 'mysql';
+import mysql from 'mysql2';
 import nodemailer from 'nodemailer';
 import cron from 'node-cron';
 
 const con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "finanzas"
+    host: "bavtb97nyrdvkghopy9i-mysql.services.clever-cloud.com",
+    user: "uysekncqgasmw8cs",
+    password: "XG4TDNu7Fy8z0IQDcmz1",
+    database: "bavtb97nyrdvkghopy9i",
+    port: 3306
 });
 
 con.connect((err) => {
